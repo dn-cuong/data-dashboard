@@ -1,4 +1,4 @@
-# Web Development Project 5 - *Name of App Here*
+# Web Development Project 5 - *Library*
 
 Submitted by: **Dang Cuong Nguyen**
 
@@ -40,7 +40,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![chrome-capture-2025-4-4](https://github.com/user-attachments/assets/e22ce9d0-8cba-4498-bbbe-2f7531425ea3)
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Chrome Capture - Gif & Screenshot tool 
