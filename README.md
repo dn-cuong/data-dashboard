@@ -1,69 +1,47 @@
-<<<<<<< HEAD
-# Web Development Project 5 - *Library*
-=======
-# Book Search Dashboard
->>>>>>> 78a890c (update)
+# Web Development Project 6 - *API Library*
 
-A React-based dashboard for searching and visualizing book data from the Open Library API.
+Submitted by: **Dang Cuong Nguyen**
 
-## Features
+This web app: **insert description**
 
-- Search and filter books by title, author, and publication year
-- Interactive data visualization using charts:
-  - Bar chart showing books published by year
-  - Pie chart showing distribution of books by language
-- Detailed view for each book with comprehensive information
-- Responsive design that works on both desktop and mobile devices
+Time spent: **3** hours spent in total
 
-## Technologies Used
+## Required Features
 
-- React
-- React Router for navigation
-- Recharts for data visualization
-- Open Library API for book data
-- Vite for project bundling
+The following **required** functionality is completed:
 
-## Getting Started
+- [X] **Clicking on an item in the list view displays more details about it**
+  - Clicking on an item in the dashboard list navigates to a detail view for that item
+  - Detail view includes extra information about the item not included in the dashboard view
+  - The same sidebar is displayed in detail view as in dashboard view
+  - *To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording.*
+- [X] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
+  -  *To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording.*
+- [X] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
+  - At least two charts should be incorporated into the dashboard view of the site
+  - Each chart should describe a different aspect of the dataset
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open http://localhost:5173 in your browser
 
-## Project Structure
+The following **optional** features are implemented:
 
-```
-src/
-├── components/
-│   ├── BookChart.jsx     # Bar chart component
-│   ├── BookDetail.jsx    # Detailed book view
-│   ├── LanguageChart.jsx # Pie chart component
-│   ├── NavBar.jsx        # Navigation component
-│   └── Statistics.jsx    # Statistics display
-├── App.jsx              # Main application component
-├── App.css             # Styles
-└── main.jsx           # Entry point
-```
+- [X] The site’s customized dashboard contains more content that explains what is interesting about the data 
+  - e.g., an additional description, graph annotation, suggestion for which filters to use, or an additional page that explains more about the data
+- [X] The site allows users to toggle between different data visualizations
+  - User should be able to use some mechanism to toggle between displaying and hiding visualizations 
 
-## API Integration
+  
+The following **additional** features are implemented:
 
-This project uses the Open Library API to fetch book data. The main endpoint used is:
-- Search API: `https://openlibrary.org/search.json`
+* [ ] List anything else that you added to improve the site's functionality!
 
-## Features
+## Video Walkthrough
 
-<<<<<<< HEAD
-![chrome-capture-2025-4-4](https://github.com/user-attachments/assets/e22ce9d0-8cba-4498-bbbe-2f7531425ea3)
+Here's a walkthrough of implemented user stories:
+![chrome-capture-2025-4-11](https://github.com/user-attachments/assets/5b5b7c83-805c-42e6-b03b-8f76a159c953)
 
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with Chrome Capture - Gif & Screenshot tool 
+GIF created with Chrome Capture - Gif & Screenshot tool
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -88,14 +66,3 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-=======
-- Real-time search and filtering
-- Interactive data visualizations
-- Responsive design
-- Detailed book information
-- Clean and modern UI
-
-## License
-
-MIT License
->>>>>>> 78a890c (update)
