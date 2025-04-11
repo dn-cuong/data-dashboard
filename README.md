@@ -1,45 +1,64 @@
+<<<<<<< HEAD
 # Web Development Project 5 - *Library*
+=======
+# Book Search Dashboard
+>>>>>>> 78a890c (update)
 
-Submitted by: **Dang Cuong Nguyen**
+A React-based dashboard for searching and visualizing book data from the Open Library API.
 
-This web app: **OpenLibrary API**
+## Features
 
-Time spent: **5** hours spent in total
+- Search and filter books by title, author, and publication year
+- Interactive data visualization using charts:
+  - Bar chart showing books published by year
+  - Pie chart showing distribution of books by language
+- Detailed view for each book with comprehensive information
+- Responsive design that works on both desktop and mobile devices
 
-## Required Features
+## Technologies Used
 
-The following **required** functionality is completed:
+- React
+- React Router for navigation
+- Recharts for data visualization
+- Open Library API for book data
+- Vite for project bundling
 
-- [X] **The site has a dashboard displaying a list of data fetched using an API call**
-  - The dashboard should display at least 10 unique items, one per row
-  - The dashboard includes at least two features in each row
-- [X] **`useEffect` React hook and `async`/`await` are used**
-- [X] **The app dashboard includes at least three summary statistics about the data** 
-  - The app dashboard includes at least three summary statistics about the data, such as:
-    - *insert details here*
-- [X] **A search bar allows the user to search for an item in the fetched data**
-  - The search bar **correctly** filters items in the list, only displaying items matching the search query
-  - The list of results dynamically updates as the user types into the search bar
-- [X] **An additional filter allows the user to restrict displayed items by specified categories**
-  - The filter restricts items in the list using a **different attribute** than the search bar 
-  - The filter **correctly** filters items in the list, only displaying items matching the filter attribute in the dashboard
-  - The dashboard list dynamically updates as the user adjusts the filter
+## Getting Started
 
-The following **optional** features are implemented:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open http://localhost:5173 in your browser
 
-- [X] Multiple filters can be applied simultaneously
-- [X] Filters use different input types
-  - e.g., as a text input, a dropdown or radio selection, and/or a slider
-- [ ] The user can enter specific bounds for filter values
+## Project Structure
 
-The following **additional** features are implemented:
+```
+src/
+├── components/
+│   ├── BookChart.jsx     # Bar chart component
+│   ├── BookDetail.jsx    # Detailed book view
+│   ├── LanguageChart.jsx # Pie chart component
+│   ├── NavBar.jsx        # Navigation component
+│   └── Statistics.jsx    # Statistics display
+├── App.jsx              # Main application component
+├── App.css             # Styles
+└── main.jsx           # Entry point
+```
 
-* [ ] List anything else that you added to improve the site's functionality!
+## API Integration
 
-## Video Walkthrough
+This project uses the Open Library API to fetch book data. The main endpoint used is:
+- Search API: `https://openlibrary.org/search.json`
 
-Here's a walkthrough of implemented user stories:
+## Features
 
+<<<<<<< HEAD
 ![chrome-capture-2025-4-4](https://github.com/user-attachments/assets/e22ce9d0-8cba-4498-bbbe-2f7531425ea3)
 
 
@@ -69,3 +88,14 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+=======
+- Real-time search and filtering
+- Interactive data visualizations
+- Responsive design
+- Detailed book information
+- Clean and modern UI
+
+## License
+
+MIT License
+>>>>>>> 78a890c (update)

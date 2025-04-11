@@ -1,5 +1,6 @@
 import React from 'react';
 import BookChart from './BookChart';
+import LanguageChart from './LanguageChart';
 
 const Statistics = ({ books }) => {
   if (!books || books.length === 0) return <p>No data available.</p>;
@@ -19,21 +20,24 @@ const Statistics = ({ books }) => {
   }
 
   return (
-    <>
+    <div className="statistics-container">
       <h3>Summary Statistics</h3>
       <div className='stats-container'>
         <div className='stats-card'>
-          <p>Total Books: {totalBooks}</p> {/* this represents the total number books listed for ACOTAR */}
+          <p>Total Books: {totalBooks}</p>
         </div>
         <div className='stats-card'>
-          <p>Earliest Publication Year: {earliestYear}</p> {/* this represents the earliest year that was published from the list */}
+          <p>Earliest Publication Year: {earliestYear}</p>
         </div>
         <div className='stats-card'>
-          <p>Most Common Author: {mostCommonAuthor}</p> {/* this represents the author that pops up the most from the list (mode) */}
+          <p>Most Common Author: {mostCommonAuthor}</p>
         </div>
       </div>
-      <BookChart books={books} />
-    </>
+      <div className="charts-container">
+        <BookChart books={books} />
+        <LanguageChart books={books} />
+      </div>
+    </div>
   );
 };
 

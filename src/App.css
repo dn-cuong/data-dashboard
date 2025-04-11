@@ -86,17 +86,40 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
-  .chart {
-    margin: auto;
-    max-width: 500px;
-    height: 500px;
-    background-color: white;
-    border-radius: 24px;
-    backdrop-filter: blur(2px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  .charts-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    width: 100%;
+  }
+  
+  .chart {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    height: 400px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chart h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+  
+  .chart-content {
+    flex: 1;
+    width: 100%;
+    height: calc(100% - 2rem);
+    position: relative;
   }
   
   h1 {
@@ -120,6 +143,61 @@ body {
   }
   a:hover {
     color: #78a3ee;
+  }
+  
+  /* Book Detail styles */
+  .book-detail-container {
+    padding: 20px;
+  }
+  
+  .book-detail-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .book-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .info-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  .info-section h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .book-cover {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  .back-link:hover {
+    background-color: #e0e0e0;
   }
   
   /* Responsive */

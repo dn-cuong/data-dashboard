@@ -10,27 +10,38 @@ const BookChart = ({ books }) => {
         return acc;
     }, {});
 
-    const formattedData = Object.keys(data).map(year => ({ year, count: data[year] }));
+    const formattedData = Object.keys(data)
+        .sort((a, b) => Number(a) - Number(b))
+        .map(year => ({ year, count: data[year] }));
 
     return (
         <div className='chart'>
-            <ResponsiveContainer width={500} height={500}>
-                <BarChart
-                    width={500}
-                    height={300}
-                    data={formattedData}
-                    margin={{
-                        top: 5, right: 30, left: 20, bottom: 5,
-                    }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="year" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="count" fill="#8884d8" />
-                </BarChart>
-            </ResponsiveContainer>
+            <h3>Books Published by Year</h3>
+            <div className="chart-content">
+                <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                        data={formattedData}
+                        margin={{
+                            top: 20,
+                            right: 30,
+                            left: 20,
+                            bottom: 30,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis 
+                            dataKey="year"
+                            angle={-45}
+                            textAnchor="end"
+                            height={60}
+                        />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="count" fill="#8884d8" name="Number of Books" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
         </div>
     );
 };
